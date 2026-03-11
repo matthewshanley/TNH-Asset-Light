@@ -418,6 +418,11 @@ export default function Home() {
                 method="POST"
                 className="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
             >
+                <input
+                type="hidden"
+                name="_subject"
+                value="New inquiry from partners.nbhdhotels.com"
+              />
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
                   <label
