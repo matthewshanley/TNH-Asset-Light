@@ -145,12 +145,18 @@ export default function Home() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <button className="rounded-full bg-[#c9dde4] px-6 py-3 text-sm font-medium text-stone-900 transition hover:-translate-y-0.5">
+              <a
+                href="#contact-form"
+                className="rounded-full bg-[#c9dde4] px-6 py-3 text-sm font-medium text-stone-900 transition hover:-translate-y-0.5"
+              >
                 Start a Conversation
-              </button>
-              <button className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/15">
+              </a>
+              <a
+                href="#portfolio"
+                className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/15"
+              >
                 View Our Portfolio
-              </button>
+              </a>
             </div>
           </div>
 
@@ -344,7 +350,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-stone-200 bg-white">
+      <section id="portfolio" className="border-y border-stone-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
           <div className="max-w-3xl">
             <div className="text-sm uppercase tracking-[0.25em] text-stone-500">
@@ -389,29 +395,124 @@ export default function Home() {
       </section>
 
       <section id="contact" className="bg-[#1f1d1a]">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-16 lg:flex-row lg:items-center lg:justify-between lg:px-10">
-          <div>
-            <div className="text-sm uppercase tracking-[0.25em] text-stone-400">
-              Partnerships
+        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div>
+              <div className="text-sm uppercase tracking-[0.25em] text-stone-400">
+                Partnerships
+              </div>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-4xl">
+                Interested in whether TNH is the right fit for your building?
+              </h2>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
+                We partner with owners who believe hospitality can be more
+                thoughtful, more local, and more performance-minded. Start a
+                conversation with our team to learn more about the brand, our
+                operating model, and the types of properties we partner with.
+              </p>
             </div>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-4xl">
-              Interested in whether TNH is the right fit for your building?
-            </h2>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
-              We partner with owners who believe hospitality can be more
-              thoughtful, more local, and more performance-minded. Start a
-              conversation with our team to learn more about the brand, our
-              operating model, and the types of properties we partner with.
-            </p>
-          </div>
 
-          <div className="flex flex-wrap gap-4">
-            <button className="rounded-full bg-white px-6 py-3 text-sm font-medium text-stone-900 transition hover:-translate-y-0.5">
-              Start a Conversation
-            </button>
-            <button className="rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10">
-              View Our Portfolio
-            </button>
+            <form
+              id="contact-form"
+              className="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+            >
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="mb-2 block text-sm font-medium text-stone-200"
+                  >
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    className="w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-white placeholder:text-stone-400 focus:border-white/30 focus:outline-none"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="mb-2 block text-sm font-medium text-stone-200"
+                  >
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    className="w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-white placeholder:text-stone-400 focus:border-white/30 focus:outline-none"
+                    placeholder="you@company.com"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="company"
+                    className="mb-2 block text-sm font-medium text-stone-200"
+                  >
+                    Company
+                  </label>
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    className="w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-white placeholder:text-stone-400 focus:border-white/30 focus:outline-none"
+                    placeholder="Company name"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="market"
+                    className="mb-2 block text-sm font-medium text-stone-200"
+                  >
+                    Property / Market
+                  </label>
+                  <input
+                    id="market"
+                    name="market"
+                    type="text"
+                    className="w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-white placeholder:text-stone-400 focus:border-white/30 focus:outline-none"
+                    placeholder="Chicago, Michigan, etc."
+                  />
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <label
+                  htmlFor="message"
+                  className="mb-2 block text-sm font-medium text-stone-200"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={5}
+                  className="w-full rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-white placeholder:text-stone-400 focus:border-white/30 focus:outline-none"
+                  placeholder="Tell us a bit about your property or what you are exploring."
+                />
+              </div>
+
+              <div className="mt-6 flex flex-wrap gap-4">
+                <button
+                  type="submit"
+                  className="rounded-full bg-white px-6 py-3 text-sm font-medium text-stone-900 transition hover:-translate-y-0.5"
+                >
+                  Submit Inquiry
+                </button>
+                <a
+                  href="#portfolio"
+                  className="rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+                >
+                  View Our Portfolio
+                </a>
+              </div>
+            </form>
           </div>
         </div>
       </section>
