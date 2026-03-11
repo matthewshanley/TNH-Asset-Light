@@ -1,100 +1,112 @@
 export default function Home() {
-  const pillars = [
+  const uniques = [
     {
-      title: "Design-forward, operator-led",
-      text: "We bring together boutique brand standards, revenue management, guest experience, and local operating discipline in one platform built for distinctive real estate.",
+      title: "Hybrid Hospitality Experience",
+      text: "We combine the reliability, comfort, and service of a hotel with the charm, character, and authenticity of a residential stay. The result is a guest experience that feels elevated, flexible, and easy from booking through checkout.",
     },
     {
-      title: "Heads in beds, fast",
-      text: "Our launch playbook is built to stabilize assets quickly through tech transfer, OTA distribution, direct booking infrastructure, marketing activation, and on-site operational control.",
+      title: "Thoughtful, Local Design",
+      text: "Each property reflects the essence of its neighborhood through custom touches, curated details, and intentional design. Our spaces are residential in scale, locally grounded, and designed to feel memorable rather than generic.",
     },
     {
-      title: "Owner-aligned economics",
-      text: "The model is built around ownership outcomes: near-term cash flow, disciplined ramp-up, higher-margin direct demand, and long-term asset value creation.",
+      title: "Flexible Stays for Diverse Guests",
+      text: "Whether guests are traveling for business or leisure, solo or with family, for two nights or an extended stay, our spaces are designed to support a wide range of needs with autonomy, comfort, and character.",
     },
-    {
-      title: "Boutique brand advantage",
-      text: "Owners access The Neighborhood Hotel brand, systems, and audience without having to build a hospitality platform internally from scratch.",
-    },
-  ];
-
-  const proofPoints = [
-    { value: "79.4", label: "Net Promoter Score" },
-    { value: "55%", label: "Direct bookings portfolio-wide" },
-    { value: "20+", label: "OTA channels activated at launch" },
-    { value: "30", label: "Days to operational go-live target" },
   ];
 
   const process = [
     {
-      step: "01",
-      title: "Assess the opportunity",
-      text: "We evaluate the asset, submarket, guest demand, building condition, and positioning opportunity to determine fit.",
+      step: "Discover",
+      text: "Guests find us through word-of-mouth, strong reviews, and seamless booking channels.",
     },
     {
-      step: "02",
-      title: "Build the operating plan",
-      text: "We define the launch path, commercial strategy, staffing model, tech stack, and brand expression around the property’s specific business plan.",
+      step: "Book",
+      text: "A simple, hassle-free booking experience helps guests find the right space for the way they travel.",
     },
     {
-      step: "03",
-      title: "Launch with control",
-      text: "We transition systems, activate distribution, install TNH operating standards, and get the property guest-ready with clear accountability.",
+      step: "Stay",
+      text: "Seamless check-in, thoughtful design, and home-like comforts create an experience that feels easy from the start.",
     },
     {
-      step: "04",
-      title: "Drive long-term value",
-      text: "We optimize pricing, marketing, channel mix, reviews, direct demand, and operational efficiency to grow NOI and strengthen asset value.",
+      step: "Experience",
+      text: "Curated neighborhood recommendations, prime locations, and personalized details help guests live like locals.",
+    },
+    {
+      step: "Return",
+      text: "Guests leave with memorable experiences and often come back again, strengthening loyalty, direct demand, and long-term brand value.",
     },
   ];
 
-  const audience = [
-    "Adaptive reuse and conversion opportunities",
-    "Mixed-use buildings with hospitality potential",
-    "Urban boutique and apartment-style hotel concepts",
-    "Underperforming lodging assets needing repositioning",
-    "Owners seeking a branded operating partner",
-    "Developers who want flexibility without a hard flag",
+  const platform = [
+    "Revenue management and pricing strategy",
+    "Direct booking infrastructure",
+    "Guest communications and digital access",
+    "Housekeeping and maintenance workflows",
+    "Marketing and review generation",
+    "Local partnerships and neighborhood storytelling",
   ];
 
-  const faqs = [
+  const proofPoints = [
+    { value: "79.4", label: "Net Promoter Score" },
+    { value: "55%", label: "Direct bookings" },
+    { value: "4.9", label: "Average review score" },
+    { value: "5", label: "Locations operating or in pipeline" },
+  ];
+
+  const properties = [
     {
-      q: "Is this a standalone website?",
-      a: "Yes. The best structure is a standalone owner-facing microsite that feels native to The Neighborhood Hotel brand while speaking directly to building owners, developers, and capital partners.",
+      name: "Lincoln Park",
+      region: "Chicago",
+      detail: "Our first location opened in summer 2020 near beloved restaurants, shops, and green space.",
+      image:
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
     },
     {
-      q: "How should it relate to the main TNH site?",
-      a: "It should borrow the same visual DNA: bold imagery, airy layouts, modern typography, neighborhood storytelling, and a warm boutique tone. But the content architecture should be purpose-built for partnerships rather than guest bookings.",
+      name: "Little Italy",
+      region: "Chicago",
+      detail: "An old-world neighborhood stay near UIC, Rush, the West Loop, and the United Center.",
+      image:
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80",
     },
     {
-      q: "What should owners understand right away?",
-      a: "That TNH is not just a brand. It is an operating platform with launch capability, revenue strategy, technology, guest experience systems, and owner reporting designed to create value quickly and sustainably.",
+      name: "Grand Beach",
+      region: "Michigan",
+      detail: "A quick escape from the city with an ideal blend of nature, comfort, and design-forward hospitality.",
+      image:
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+    },
+    {
+      name: "New Buffalo",
+      region: "Michigan",
+      detail: "Apartment-style hospitality in the heart of a fast-growing Southwest Michigan destination.",
+      image:
+        "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-[#f5f2eb] text-stone-900">
-      <section className="relative isolate overflow-hidden bg-white">
+    <div className="min-h-screen bg-[#f6f1e8] text-stone-900">
+      <section className="relative isolate overflow-hidden bg-[#e9e2d6]">
         <img
-          src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1600&q=80"
-          alt="Boutique hospitality building exterior"
+          src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80"
+          alt="The Neighborhood Hotel interior"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-stone-950/45" />
+        <div className="absolute inset-0 bg-stone-950/35" />
 
         <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
           <div className="text-sm uppercase tracking-[0.35em] text-white">
             The Neighborhood Hotel
           </div>
           <nav className="hidden gap-8 text-sm text-white/90 md:flex">
-            <a href="#model" className="transition hover:text-white">
-              The Model
+            <a href="#about" className="transition hover:text-white">
+              About
             </a>
-            <a href="#why-us" className="transition hover:text-white">
-              Why Us
+            <a href="#uniques" className="transition hover:text-white">
+              What Makes Us Different
             </a>
             <a href="#process" className="transition hover:text-white">
-              How It Works
+              Proven Process
             </a>
             <a href="#contact" className="transition hover:text-white">
               Partnerships
@@ -102,26 +114,23 @@ export default function Home() {
           </nav>
         </header>
 
-        <div className="relative z-10 mx-auto grid max-w-7xl gap-12 px-6 pb-20 pt-16 lg:grid-cols-[1.15fr_0.85fr] lg:px-10 lg:pb-28 lg:pt-24">
-          <div className="max-w-3xl">
-            <div className="mb-6 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white backdrop-blur-sm">
-              Real Estate Partnerships
+        <div className="relative z-10 mx-auto grid max-w-7xl gap-12 px-6 pb-20 pt-14 lg:grid-cols-[1.15fr_0.85fr] lg:px-10 lg:pb-28 lg:pt-24">
+          <div className="max-w-4xl">
+            <div className="mb-6 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-medium uppercase tracking-[0.22em] text-white backdrop-blur-sm">
+              Boutique Hospitality Brand + Operating Platform
             </div>
-            <h1 className="text-5xl font-semibold leading-tight tracking-tight text-white md:text-6xl lg:text-7xl">
-              A branded hospitality platform for owners who want boutique
-              upside without building it all in-house.
+            <h1 className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tight text-white md:text-6xl lg:text-7xl">
+              A boutique hospitality brand built for distinctive buildings.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85">
-              A standalone owner-facing site with The Neighborhood Hotel’s
-              design DNA, focused on operator credibility, launch capability,
-              and long-term asset value creation.
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/90">
+              The Neighborhood Hotel combines the reliability, comfort, and service of a hotel with the character, flexibility, and authenticity of a residential stay. We create design-forward, neighborhood-rooted hospitality experiences that guests remember and return to.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <button className="rounded-full bg-[#a8dfe0] px-6 py-3 text-sm font-medium text-stone-900 transition hover:-translate-y-0.5">
-                Request Owner Deck
+              <button className="rounded-full bg-[#bfdce6] px-6 py-3 text-sm font-medium text-stone-900 transition hover:-translate-y-0.5">
+                Start a Conversation
               </button>
               <button className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/15">
-                Explore the Platform
+                View Our Portfolio
               </button>
             </div>
           </div>
@@ -129,15 +138,13 @@ export default function Home() {
           <div className="self-end lg:pl-8">
             <div className="rounded-[2rem] border border-white/15 bg-white/12 p-6 text-white shadow-2xl backdrop-blur-md">
               <div className="text-xs uppercase tracking-[0.25em] text-white/70">
-                Why owners engage
+                A brand guests trust and return to
               </div>
               <div className="mt-6 grid grid-cols-2 gap-4">
                 {proofPoints.map((item) => (
                   <div key={item.label} className="rounded-[1.5rem] bg-white/10 p-5">
                     <div className="text-3xl font-semibold">{item.value}</div>
-                    <div className="mt-2 text-sm leading-6 text-white/75">
-                      {item.label}
-                    </div>
+                    <div className="mt-2 text-sm leading-6 text-white/75">{item.label}</div>
                   </div>
                 ))}
               </div>
@@ -146,95 +153,83 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="model" className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-        <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+      <section id="about" className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
-            <div className="text-sm uppercase tracking-[0.25em] text-stone-500">
-              The Model
-            </div>
+            <div className="text-sm uppercase tracking-[0.25em] text-stone-500">Who We Are</div>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-              More sophisticated than a deck. More targeted than the guest site.
+              Built by owners. Shaped by hospitality.
             </h2>
           </div>
-          <div className="text-lg leading-8 text-stone-600">
-            The site should function as a standalone partnerships microsite under
-            the TNH umbrella. It needs the confidence and visual warmth of the
-            consumer website, but with a sharper narrative for owners: why TNH
-            wins, how the operating model works, how quickly it can launch, and
-            how it drives long-term asset value.
-          </div>
-        </div>
-
-        <div id="why-us" className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {pillars.map((pillar) => (
-            <div
-              key={pillar.title}
-              className="rounded-[2rem] border border-stone-200 bg-white p-7 shadow-sm"
-            >
-              <h3 className="text-xl font-semibold">{pillar.title}</h3>
-              <p className="mt-4 text-sm leading-7 text-stone-600">
-                {pillar.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="bg-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-2 lg:px-10">
-          <div className="rounded-[2rem] bg-stone-900 p-8 text-white">
-            <div className="text-sm uppercase tracking-[0.25em] text-stone-400">
-              Recommended homepage narrative
-            </div>
-            <h3 className="mt-4 text-3xl font-semibold tracking-tight">
-              Stabilize fast. Then create long-term value.
-            </h3>
-            <p className="mt-5 text-base leading-7 text-stone-300">
-              TNH should lead with immediate execution capability, then show the
-              longer-term marketing and operating flywheel. That is a much
-              stronger owner story than generic management language.
+          <div className="space-y-6 text-lg leading-8 text-stone-600">
+            <p>
+              The Neighborhood Hotel was created for travelers who want more than a standard hotel stay and for owners who believe great real estate deserves a more thoughtful operating model.
+            </p>
+            <p>
+              We blend boutique hospitality, intentional design, and disciplined operations to create places that feel local, memorable, and built to last.
             </p>
           </div>
-          <div className="rounded-[2rem] border border-stone-200 bg-[#ebe5d8] p-8">
+        </div>
+      </section>
+
+      <section id="uniques" className="border-y border-stone-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+          <div className="max-w-3xl">
             <div className="text-sm uppercase tracking-[0.25em] text-stone-500">
-              Suggested page structure
+              What Makes Us Different
             </div>
-            <div className="mt-5 space-y-4 text-sm leading-7 text-stone-700">
-              <div>Hero with owner-facing value proposition</div>
-              <div>Proof points and operating credibility</div>
-              <div>What TNH actually does as operator</div>
-              <div>30-day launch and go-live playbook</div>
-              <div>Demand generation and direct booking flywheel</div>
-              <div>Portfolio results and case studies</div>
-              <div>Who this works for and partnership CTA</div>
-            </div>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+              A hybrid hospitality experience rooted in design, flexibility, and place.
+            </h2>
+          </div>
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {uniques.map((item) => (
+              <div key={item.title} className="rounded-[2rem] border border-stone-200 bg-[#faf8f4] p-8 shadow-sm">
+                <h3 className="text-2xl font-semibold tracking-tight text-stone-900">{item.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-stone-600">{item.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section id="process" className="border-y border-stone-200 bg-[#efeae0]">
+      <section className="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:px-10 lg:items-center">
+        <div>
+          <div className="text-sm uppercase tracking-[0.25em] text-stone-500">Guest Experience</div>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+            Hotel-quality standards. Residential-style stays.
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-stone-600">
+            Our properties are designed for the way people travel now: more flexibility, more space, more comfort, and fewer friction points. Full kitchens, thoughtful amenities, seamless digital access, and neighborhood-driven recommendations create a stay that feels both polished and personal.
+          </p>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <img
+            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
+            alt="Neighborhood Hotel bedroom"
+            className="h-72 w-full rounded-[2rem] object-cover shadow-sm"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80"
+            alt="Neighborhood Hotel kitchen"
+            className="h-72 w-full rounded-[2rem] object-cover shadow-sm sm:mt-12"
+          />
+        </div>
+      </section>
+
+      <section id="process" className="bg-[#e8dfd2]">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-          <div className="max-w-2xl">
-            <div className="text-sm uppercase tracking-[0.25em] text-stone-500">
-              How it works
-            </div>
+          <div className="max-w-3xl">
+            <div className="text-sm uppercase tracking-[0.25em] text-stone-500">Proven Process</div>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-              A launch playbook owners can actually understand.
+              A proven process that turns first stays into repeat stays.
             </h2>
           </div>
-          <div className="mt-12 grid gap-6 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 lg:grid-cols-5">
             {process.map((item) => (
-              <div
-                key={item.step}
-                className="rounded-[2rem] bg-white p-7 shadow-sm ring-1 ring-stone-200"
-              >
-                <div className="text-sm font-semibold text-stone-500">
-                  {item.step}
-                </div>
-                <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
-                <p className="mt-4 text-sm leading-7 text-stone-600">
-                  {item.text}
-                </p>
+              <div key={item.step} className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-stone-200">
+                <div className="text-lg font-semibold text-stone-900">{item.step}</div>
+                <p className="mt-4 text-sm leading-7 text-stone-600">{item.text}</p>
               </div>
             ))}
           </div>
@@ -242,52 +237,48 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div>
-            <div className="text-sm uppercase tracking-[0.25em] text-stone-500">
-              Who it’s for
-            </div>
+            <div className="text-sm uppercase tracking-[0.25em] text-stone-500">Operating Platform</div>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-              Best for distinctive buildings, conversion opportunities, and
-              owners who want flexibility.
+              A hospitality brand powered by a real operating platform.
             </h2>
-            <p className="mt-6 text-lg leading-8 text-stone-600">
-              The positioning should stay premium and design-led, but it also
-              needs to clearly say where TNH is strongest as an operator and
-              brand partner.
-            </p>
           </div>
-          <div className="grid gap-5 md:grid-cols-2">
-            {audience.map((item) => (
-              <div
-                key={item}
-                className="rounded-[2rem] border border-stone-200 bg-white p-6 text-sm font-medium text-stone-700 shadow-sm"
-              >
-                {item}
-              </div>
-            ))}
+          <div>
+            <p className="text-lg leading-8 text-stone-600">
+              Behind every Neighborhood Hotel stay is a disciplined operating model built to support consistency, guest satisfaction, and long-term performance. We bring together hospitality operations, revenue strategy, digital guest experience, local brand storytelling, and repeatable systems that help distinctive properties perform at a high level.
+            </p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {platform.map((item) => (
+                <div key={item} className="rounded-[1.5rem] border border-stone-200 bg-white px-5 py-4 text-sm font-medium text-stone-700 shadow-sm">
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="border-t border-stone-200 bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-20 lg:px-10">
-          <div className="text-center">
-            <div className="text-sm uppercase tracking-[0.25em] text-stone-500">
-              FAQ
-            </div>
+      <section className="border-y border-stone-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
+          <div className="max-w-3xl">
+            <div className="text-sm uppercase tracking-[0.25em] text-stone-500">Portfolio</div>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-              Direction for the standalone site.
+              Rooted in real neighborhoods.
             </h2>
+            <p className="mt-6 text-lg leading-8 text-stone-600">
+              Each Neighborhood Hotel is shaped by its setting, but connected by the same standards: thoughtful design, residential comfort, and a frictionless guest experience.
+            </p>
           </div>
-          <div className="mt-12 space-y-4">
-            {faqs.map((faq) => (
-              <div
-                key={faq.q}
-                className="rounded-[2rem] border border-stone-200 bg-stone-50 p-6"
-              >
-                <h3 className="text-lg font-semibold">{faq.q}</h3>
-                <p className="mt-3 text-sm leading-7 text-stone-600">{faq.a}</p>
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {properties.map((property) => (
+              <div key={property.name} className="overflow-hidden rounded-[2rem] border border-stone-200 bg-[#faf8f4] shadow-sm">
+                <img src={property.image} alt={property.name} className="h-56 w-full object-cover" />
+                <div className="p-6">
+                  <div className="text-sm uppercase tracking-[0.22em] text-stone-500">{property.region}</div>
+                  <h3 className="mt-2 text-2xl font-semibold tracking-tight">{property.name}</h3>
+                  <p className="mt-4 text-sm leading-7 text-stone-600">{property.detail}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -297,24 +288,20 @@ export default function Home() {
       <section id="contact" className="bg-stone-900">
         <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-16 lg:flex-row lg:items-center lg:justify-between lg:px-10">
           <div>
-            <div className="text-sm uppercase tracking-[0.25em] text-stone-400">
-              Owner Partnerships
-            </div>
+            <div className="text-sm uppercase tracking-[0.25em] text-stone-400">Partnerships</div>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white md:text-4xl">
-              Build the owner-facing TNH site around proof, not just positioning.
+              Interested in whether TNH is the right fit for your building?
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
-              This first shell creates a strong owner-facing story. Next we can
-              replace placeholder proof points, imagery, and copy with TNH
-              portfolio-specific content.
+              We partner with owners who believe hospitality can be more thoughtful, more local, and more performance-minded. Start a conversation with our team to learn more about the brand, our operating model, and the types of properties we partner with.
             </p>
           </div>
           <div className="flex flex-wrap gap-4">
             <button className="rounded-full bg-white px-6 py-3 text-sm font-medium text-stone-900 transition hover:-translate-y-0.5">
-              Schedule a Conversation
+              Start a Conversation
             </button>
             <button className="rounded-full border border-white/20 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10">
-              Download Partnership Materials
+              View Our Portfolio
             </button>
           </div>
         </div>
