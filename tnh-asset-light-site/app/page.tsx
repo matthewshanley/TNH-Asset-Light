@@ -413,16 +413,17 @@ export default function Home() {
             </div>
 
             <form
-                id="contact-form"
-                action="https://formspree.io/f/xxxxabcd"
-                method="POST"
-                className="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+              id="contact-form"
+              action="https://formspree.io/f/mbdzopej"
+              method="POST"
+              className="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
             >
-                <input
+              <input
                 type="hidden"
                 name="_subject"
                 value="New inquiry from partners.nbhdhotels.com"
               />
+
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
                   <label
