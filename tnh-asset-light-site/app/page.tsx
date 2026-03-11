@@ -413,8 +413,10 @@ export default function Home() {
             </div>
 
             <form
-              id="contact-form"
-              className="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
+                id="contact-form"
+                action="https://formspree.io/f/xxxxabcd"
+                method="POST"
+                className="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
             >
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
